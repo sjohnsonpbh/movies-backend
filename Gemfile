@@ -49,7 +49,10 @@ gem 'rswag'
 gem 'rspec-rails'
 gem 'rswag-specs'
 
-
+# ==================== rapid API Gems =======================
+gem 'uri'
+gem 'net-http'
+gem 'openssl'
 
 # ======================== Development Gems ========================
 group :development, :test do
