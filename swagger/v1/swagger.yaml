@@ -22,20 +22,20 @@
                   "example": {
                     "success": true,
                     "payload": {
-                      "id": 96621,
-                      "email": "randall@wilkinson.biz",
-                      "first_name": "Eda",
-                      "last_name": "Maggio",
-                      "name": "Eda Maggio",
+                      "id": 80717,
+                      "email": "maricela_rowe@mcglynn-heller.com",
+                      "first_name": "Dana",
+                      "last_name": "Pouros",
+                      "name": "Dana Pouros",
                       "token": {
-                        "id": 32136,
-                        "created_at": "2023-03-16 18:46:40 UTC",
-                        "expiry": "2023-03-23 18:46:40 UTC",
+                        "id": 70428,
+                        "created_at": "2023-03-18 17:16:34 UTC",
+                        "expiry": "2023-03-25 17:16:34 UTC",
                         "ip": null,
                         "revocation_date": null,
-                        "updated_at": "2023-03-16 18:46:40 UTC",
-                        "user_id": 96621,
-                        "value": "1BzSSzFArKGopyZSMwKi2r2RKoLJdkv2xa"
+                        "updated_at": "2023-03-18 17:16:34 UTC",
+                        "user_id": 80717,
+                        "value": "1JqDsnuKW2HyiLfK7ngTasRG5yXeRhdnj9"
                       }
                     },
                     "status": 200
@@ -122,11 +122,11 @@
                 "schema": {
                   "example": {
                     "payload": {
-                      "id": 96621,
-                      "email": "randall@wilkinson.biz",
-                      "first_name": "Eda",
-                      "last_name": "Maggio",
-                      "name": "Eda Maggio"
+                      "id": 80717,
+                      "email": "maricela_rowe@mcglynn-heller.com",
+                      "first_name": "Dana",
+                      "last_name": "Pouros",
+                      "name": "Dana Pouros"
                     },
                     "status": 200
                   }
@@ -164,12 +164,12 @@
                   "example": {
                     "success": true,
                     "payload": {
-                      "id": 96621,
-                      "email": "randall@wilkinson.biz",
-                      "first_name": "Eda",
-                      "last_name": "Maggio",
-                      "name": "Eda Maggio",
-                      "phone": "1524887662"
+                      "id": 80717,
+                      "email": "maricela_rowe@mcglynn-heller.com",
+                      "first_name": "Dana",
+                      "last_name": "Pouros",
+                      "name": "Dana Pouros",
+                      "phone": "5766870402"
                     },
                     "status": 201
                   }
@@ -267,38 +267,38 @@
                 "properties": {
                   "id": {
                     "type": "integer",
-                    "example": 76485
+                    "example": 26643
                   },
                   "email": {
                     "type": "string",
-                    "example": "shirlee_rolfson@volkman.info"
+                    "example": "shanice@grant-kohler.name"
                   },
                   "first_name": {
                     "type": "string",
-                    "example": "Zachary"
+                    "example": "Luetta"
                   },
                   "last_name": {
                     "type": "string",
-                    "example": "Reinger"
+                    "example": "Raynor"
                   },
                   "name": {
                     "type": "string",
-                    "example": "Zachary Reinger"
+                    "example": "Luetta Raynor"
                   },
                   "token": {
                     "type": "object",
                     "properties": {
                       "id": {
                         "type": "integer",
-                        "example": 40731
+                        "example": 98101
                       },
                       "created_at": {
                         "type": "string",
-                        "example": "2023-03-16 18:46:40 UTC"
+                        "example": "2023-03-18 17:16:34 UTC"
                       },
                       "expiry": {
                         "type": "string",
-                        "example": "2023-03-23 18:46:40 UTC"
+                        "example": "2023-03-25 17:16:34 UTC"
                       },
                       "ip": {
                         "type": "any",
@@ -310,15 +310,15 @@
                       },
                       "updated_at": {
                         "type": "string",
-                        "example": "2023-03-16 18:46:40 UTC"
+                        "example": "2023-03-18 17:16:34 UTC"
                       },
                       "user_id": {
                         "type": "integer",
-                        "example": 76485
+                        "example": 26643
                       },
                       "value": {
                         "type": "string",
-                        "example": "1GvnANRaysDi7qyvx6tu5k82GL63hzNiRN"
+                        "example": "135rQnaEJfurZsdSPdP4eXczHsLeBPmzc6"
                       }
                     }
                   }
@@ -331,15 +331,15 @@
             "properties": {
               "id": {
                 "type": "integer",
-                "example": 40731
+                "example": 98101
               },
               "created_at": {
                 "type": "string",
-                "example": "2023-03-16 18:46:40 UTC"
+                "example": "2023-03-18 17:16:34 UTC"
               },
               "expiry": {
                 "type": "string",
-                "example": "2023-03-23 18:46:40 UTC"
+                "example": "2023-03-25 17:16:34 UTC"
               },
               "ip": {
                 "type": "any",
@@ -351,15 +351,15 @@
               },
               "updated_at": {
                 "type": "string",
-                "example": "2023-03-16 18:46:40 UTC"
+                "example": "2023-03-18 17:16:34 UTC"
               },
               "user_id": {
                 "type": "integer",
-                "example": 76485
+                "example": 26643
               },
               "value": {
                 "type": "string",
-                "example": "1GvnANRaysDi7qyvx6tu5k82GL63hzNiRN"
+                "example": "135rQnaEJfurZsdSPdP4eXczHsLeBPmzc6"
               }
             }
           },
@@ -443,23 +443,23 @@
             "properties": {
               "id": {
                 "type": "integer",
-                "example": 76485
+                "example": 26643
               },
               "email": {
                 "type": "string",
-                "example": "shirlee_rolfson@volkman.info"
+                "example": "shanice@grant-kohler.name"
               },
               "first_name": {
                 "type": "string",
-                "example": "Zachary"
+                "example": "Luetta"
               },
               "last_name": {
                 "type": "string",
-                "example": "Reinger"
+                "example": "Raynor"
               },
               "name": {
                 "type": "string",
-                "example": "Zachary Reinger"
+                "example": "Luetta Raynor"
               }
             }
           }
@@ -477,27 +477,27 @@
             "properties": {
               "id": {
                 "type": "integer",
-                "example": 76485
+                "example": 26643
               },
               "email": {
                 "type": "string",
-                "example": "shirlee_rolfson@volkman.info"
+                "example": "shanice@grant-kohler.name"
               },
               "first_name": {
                 "type": "string",
-                "example": "Zachary"
+                "example": "Luetta"
               },
               "last_name": {
                 "type": "string",
-                "example": "Reinger"
+                "example": "Raynor"
               },
               "name": {
                 "type": "string",
-                "example": "Zachary Reinger"
+                "example": "Luetta Raynor"
               },
               "phone": {
                 "type": "string",
-                "example": "8666509470"
+                "example": "1853739586"
               }
             }
           }

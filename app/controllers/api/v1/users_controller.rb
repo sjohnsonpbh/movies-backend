@@ -35,6 +35,16 @@ module Api
         render_success(payload: payload, status: 201)
       end
 
+      def update
+        
+        result = BaseApi::Users.update_user(params)
+        render_error(errors: result.errors.all, status: 400) and return unless result.success?
+        payload = {
+          user: UserBlueprint.render_as_hash(result.payload, view: :normal)
+        }
+        render_success(payload: payload, status: 201)
+      end
+
       def me
         render_success(payload: UserBlueprint.render_as_hash(@current_user), status: 200)
       end

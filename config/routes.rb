@@ -23,10 +23,12 @@ Rails.application.routes.draw do
     namespace :v1 do
       namespace :users do
         post :login
+        put :update
         delete :logout
         get :me
         post :create
       end
+      resources :movies 
     end
   end
 end
