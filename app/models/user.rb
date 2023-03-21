@@ -24,8 +24,9 @@ class User < ApplicationRecord
   has_secure_password validations: true
   has_many :tokens
   has_many :user_roles
+  has_many :movie_users
   has_many :roles, through: :user_roles
-
+  has_many :movies, through: :movie_users
   validates :email, uniqueness: true
 
   scope :invite_not_expired, -> { where('invitation_expiration > ?', DateTime.now) }
