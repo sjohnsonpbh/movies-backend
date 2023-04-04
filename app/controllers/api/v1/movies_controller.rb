@@ -1,8 +1,9 @@
 module Api 
   module V1 
     class MoviesController < Api::V1::ApplicationController 
+      skip_before_action :authenticate, only: %i[index show]
+
       def create 
-        
         result = Movies::Operations.new_movie(params, @current_user)
         byebug
         render_error(errors: result.errors.all, status: 400) and return unless result.success?
@@ -26,6 +27,15 @@ module Api
         payload = {
           movie: MovieBlueprint.render_as_hash(movies), 
            status: 200
+        }
+        render_success(payload: payload)
+      end
+
+      def show 
+        movie = Movie.find(params[:id])
+        payload = {
+          movie: MovieBlueprint.render_as_hash(movie),
+          status: 200
         }
         render_success(payload: payload)
       end
