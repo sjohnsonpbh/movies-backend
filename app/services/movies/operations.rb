@@ -7,5 +7,13 @@ module Movies
 
       ServiceContract.error(movie.errors.full_messages)
     end
+
+    def self.create_review(params, current_user)
+      review = current_user.review.new(user_rating: params[:user_rating], comment: params[:comment], movie_id: params[:movie_id], user_id: params[:user_id])
+
+      return ServiceContract.success(review) if review.save
+
+      ServiceContract.error(review.errors.full_messages)
+    end
   end
 end

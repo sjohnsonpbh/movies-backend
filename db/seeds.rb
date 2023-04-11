@@ -30,10 +30,6 @@ def seed_movies
         title: movie["title"],
         description: movie["overview"], 
         image_path: movie["backdrop_path"])
-
-      # puts "Movie Detail"
-      # # Print movie title 
-      # puts "Title: #{movie["title"]}"
     end
     page_num += 1
   end

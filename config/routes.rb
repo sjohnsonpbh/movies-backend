@@ -29,6 +29,12 @@ Rails.application.routes.draw do
         post :create
       end
       resources :movies 
+      namespace :movies do
+        post :create_review
+        get :review
+        post :create_user_movie
+        get :user_movie
+      end
     end
   end
 end
