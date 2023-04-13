@@ -9,7 +9,7 @@ module Movies
     end
 
     def self.create_review(params, current_user)
-      review = current_user.review.new(user_rating: params[:user_rating], comment: params[:comment], movie_id: params[:movie_id], user_id: params[:user_id])
+      review = current_user.reviews.new(user_rating: params[:user_rating], comment: params[:comment], movie_id: params[:movie_id])
 
       return ServiceContract.success(review) if review.save
 

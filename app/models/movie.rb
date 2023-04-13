@@ -1,7 +1,6 @@
 class Movie < ApplicationRecord
-  # has_many :users, through: :movie_user
-  has_many :movie_users
-  has_many :users, through: :review 
+ 
+  has_many :users, through: :movie_users 
 
-  validate :title, :description, :director, :mpa_rating, :movie_length, :image_path
+  validate :title, :description, :image_path
 end
