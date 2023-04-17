@@ -5,10 +5,8 @@ module BaseApi
     def self.new_user(params)
 
       user = User.new(
-        first_name: params[:first_name],
-        last_name: params[:last_name],
+        user_name: params[:user_name],
         email: params[:email],
-        phone: params[:phone],
         password: params[:password],
         password_confirmation: params[:password_confirmation]
       )
