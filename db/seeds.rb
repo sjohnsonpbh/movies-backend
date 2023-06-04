@@ -8,7 +8,7 @@ def seed_movies
   while page_num < 50
 
     uri = URI('http://api.themoviedb.org/3/movie/popular')
-    params = { :api_key => Rails.application.credentials.moviedb.API_KEY, :page => page_num, :language => 'en' }
+    params = { :api_key => Rails.application.credentials.API_KEY, :page => page_num, :language => 'en' }
     uri.query = URI.encode_www_form(params)
 
     res = Net::HTTP.get_response(uri)
