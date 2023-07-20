@@ -33,12 +33,14 @@ module Api
       end
 
       def index 
+        byebug
         movies = Movie.all 
         payload = {
           movie: MovieBlueprint.render_as_hash(movies), 
            status: 200
         }
         render_success(payload: payload)
+        console.log(payload)
       end
 
       def show 
